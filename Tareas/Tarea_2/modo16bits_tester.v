@@ -46,6 +46,6 @@ module tester(clk,
     end
     
     always begin
-        #1 clk = !clk;
+        #10 clk = !clk;
     end
 endmodule
