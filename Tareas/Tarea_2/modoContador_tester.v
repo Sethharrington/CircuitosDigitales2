@@ -14,22 +14,22 @@ initial begin
       d = 0;
       modo = 3;
       #2 modo = 0;
-      #2 enable = 0;
-      #10 enable = 1;
+      //#2 enable = 0;
+      //#10 enable = 1;
       #36 rst = 1;
-      #2 rst = 0;
+      #6 rst = 0;
     //Prueba #2 Cuentas descendente -1
       #66 modo = 1;
       #2 enable = 0;
       #10 enable = 1;
       #36 rst = 1;
-      #2 rst = 0;
+      #6 rst = 0;
     //Prueba #3 Cuentas descendente -3
       #64 modo = 3;
       #6 d=14;
       modo = 2;
       #36 rst = 1;
-      #2 rst = 0;
+      #6 rst = 0;
       #2 enable = 0;
       #4 enable = 1;
       #12 modo = 3;
@@ -42,7 +42,7 @@ initial begin
       #2 d = 8;
       #2 d = 10;
       #2 rst = 1;
-      #2 rst = 0;
+      #6 rst = 0;
       #2 d = 14;
       #2 d = 15;
     #4 $finish;

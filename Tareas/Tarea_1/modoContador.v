@@ -15,7 +15,7 @@ always @ (posedge clk or posedge rst or posedge enable or d) begin
       1: q <= 15;
       2: q <= 15; 
       3: q <= 4'bXXXX; endcase
-  end else begin : COUNT
+  end else begin
     while (enable) begin
       case (modo)
         0: if(rco) q = rco;
@@ -37,7 +37,6 @@ always @ (posedge clk or posedge rst or posedge enable or d) begin
         3: q <= d;
       endcase
       if (rco == 1) rco = 0;
-      disable COUNT;
     end
   end
 end

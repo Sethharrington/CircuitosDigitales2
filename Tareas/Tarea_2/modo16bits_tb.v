@@ -1,6 +1,6 @@
-//`include "modo16bits.v"
 `include "modo16bits_tester.v"
-`include "modo_16bits_full_synth.v"
+//`include "modo_16bits_full_synth.v"
+`include "modo16bits.v"
 `include "cmos_cells.v"
 
 //Testbench Code

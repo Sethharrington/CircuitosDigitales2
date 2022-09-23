@@ -1,6 +1,6 @@
-`include "modo_full_synth.v"
+//`include "modo_full_synth.v"
 `include "cmos_cells.v"
-//`include "modoContador.v"
+`include "modoContador.v"
 `include "modoContador_tester.v"
 
 //Testbench Code
